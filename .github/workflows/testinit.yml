@@ -37,5 +37,5 @@ jobs:
           ${{ secrets.DOCKER_USERNAME }}/cal:latest
           ${{ secrets.DOCKER_USERNAME }}/cal:${{ matrix.go-version }}
       env:
-        DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
