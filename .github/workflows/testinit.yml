@@ -38,4 +38,4 @@ jobs:
           your-dockerhub-username/your-image-name:${{ matrix.go-version }}
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_dckr_pat_ShJkbnWpD4VmcmWbq04iGZBsGl4 }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
