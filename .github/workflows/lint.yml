@@ -1,13 +1,9 @@
 name: Lint Workflow
-
  
-
 on:
   pull_request:
   push:
   workflow_dispatch:
-
- 
 
 jobs:
   semgrep:
@@ -17,12 +13,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
- 
-
       - name: Run Semgrep
         uses: returntocorp/semgrep-action@v1
-
- 
 
   hadolint:
     name: Dockerfile analysis with Hadolint
@@ -31,12 +23,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
- 
-
       - name: Run Hadolint
         run: docker run --rm -i hadolint/hadolint < Dockerfile
-
- 
 
   super-linter:
     name: Super-Linter
@@ -45,8 +33,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
- 
 
       - name: Run Super-Linter
         uses: github/super-linter@v4
